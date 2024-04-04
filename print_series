@@ -1,0 +1,40 @@
+Problem :-
+Print the following series using while loop
+1 4 9 16 25 36 …. n
+Input :-
+n = 49
+Output :-
+1
+4
+9
+16
+25
+36
+49
+
+Solution in java:-
+import java.util.*;
+public class Main
+{
+   
+    public static void print_series(int n)
+    {
+         /* Print the following series 
+            1 4 9 16 25 36 to n. Note print all the numbers in a seperate line*/
+        int i=1;
+        int term;
+        while (i*i<=n){
+            term=i*i;
+            System.out.println(term);
+            i++;
+        }
+        /* Do not change the code beyond this point*/
+    }
+     public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n =sc.nextInt();
+        print_series(n);
+    }
+}
+//========== User's Code Ends Here ==========
